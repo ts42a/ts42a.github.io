@@ -1,0 +1,147 @@
+/* style.css */
+
+/* 1. Root variables */
+:root {
+  --bg: #e1e1e1;
+  --fg: #2e2e2e;
+  --accent: #7f7f7f;
+  --salmon: salmon;
+  --nav-height: 64px;
+}
+
+/* 2. Base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+/* 3. Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-height);
+  background: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+  padding: 0 32px;
+}
+
+.navbar.scrolled {
+  background-color: var(--bg) !important;
+  box-shadow: 0 2px 8px rgba(0, 6, 15, 0.2);
+}
+
+.navbar .nav-link {
+  color: var(--fg) !important;
+  text-decoration: none;
+  padding: 0;
+  font-size: 16px;
+  margin: 0 8px !important;
+  transition: color 0.2s, border-bottom-color 0.2s;
+}
+
+.navbar .nav-link:hover,
+.navbar .active {
+  border-bottom: 1px solid var(--salmon);
+  font-weight: 700;
+  color: var(--fg) !important;
+}
+
+/* 4. Social Icons */
+.social-icons i {
+  color: var(--accent);
+  font-size: 1.4rem;
+  transition: color 0.2s;
+}
+
+.social-icons i:hover {
+  color: var(--fg);
+}
+
+/* 5. Main content padding (offset for fixed navbar) */
+.main-content {
+  padding-top: var(--nav-height);
+}
+
+/* 6. Overview statistics (icon + number) */
+.text-primary {
+  color: var(--accent) !important;
+}
+
+.display-6 {
+  font-size: 2.5rem;
+}
+
+/* 7. Buttons */
+.btn-outline-primary {
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--salmon) !important;
+  color: #fff !important;
+  border-color: var(--salmon) !important;
+}
+
+/* 8. Accent text utility */
+.text-accent {
+  color: var(--salmon) !important;
+}
+
+/* 9. Hero section placeholder */
+.hero-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* 10. Card shadows & spacing tweak */
+.card {
+  border: none;
+}
+
+.card.shadow-sm {
+  box-shadow: 0 2px 8px rgba(0, 6, 15, 0.1);
+}
+
+/* 11. Utility overrides */
+.bg-light {
+  background-color: #fff !important;
+}
+
+.email-Form {
+padding: 25px;
+border: 1px solid var(--accent);
+border-radius: 5px;
+}
+.contact a {
+  color: var(--fg);
+  text-decoration: none;
+  font-weight: 600;
+}
+    .form-control {
+      background-color: transparent !important;
+      border: none;
+      border-bottom: 1px solid var(--accent) !important;
+      border-radius: 0;
+      box-shadow: none;
+      color: var(--fg) !important;
+    }
+    .form-control::placeholder {
+      color: var(--accent) !important;
+    }
