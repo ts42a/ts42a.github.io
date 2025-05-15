@@ -1,0 +1,29 @@
+PS C:\Users\tonmo\OneDrive\Documents\GitHub\ts42a.github.io> tree /F /A
+Folder PATH listing for volume OS
+Volume serial number is 1805-9D0D
+C:.
+|   about.html
+|   blog.html
+|   blogs.html
+|   build-posts.js
+|   contact.html
+|   index.html
+|   index.js
+|   package-lock.json
+|   package.json
+|   portfolio.html
+|   post-template.html
+|   post.html
+|   style.css
+|   undraw_contact-us_kcoa.png
+|   undraw_contact-us_kcoa.svg
+|   WhatsApp Image 2025-05-14 at 03.21.04_346c5fcf.png
+|   WhatsApp Image 2025-05-14 at 03.26.37_58ca82be.jpg
+|
++---blog
+|       Is SaaS Really Dead, October 12, 2024.html
+|
+\---data
+        posts.json
+
+PS C:\Users\tonmo\OneDrive\Documents\GitHub\ts42a.github.io>
