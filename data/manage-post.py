@@ -46,7 +46,8 @@ def create_html(post):
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../src/css/style.css">
+  <link rel="stylesheet" href="../src/css/blog.css">
 </head>
 <body>
   <!-- Navbar -->
