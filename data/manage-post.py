@@ -104,7 +104,7 @@ def create_html(post):
     </div>
   </footer>
 
-  <script src="../index.js"></script>
+   <script src="../src/fuc/index.js"></script>
 </body>
 </html>
 """
